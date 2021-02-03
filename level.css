@@ -1,21 +1,147 @@
 body { 
-  background-color: hsl(313, 25%, 43%); 
-  display: flex; 
-  flex-direction: column; 
+  background-color: hsl(313, 23%, 8%);  
   font-family: "Raleway", Helvetica, sans-serif;
+  color: white;
   
 }
+
 header { 
   position: fixed;
   width: 100%; 
-  background-color: rgb(223, 102, 223); 
-  display: grid; 
-  grid-template-columns: 300px 1fr; 
+  height: 40px;
+  background-color: rgb(107, 102, 107); 
   z-index: 1; 
   top: 0; 
   left: 0;
   padding-top: 5px;
 } 
+header img {
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+}
+header nav{
+  float: right;
+  margin-right: 30px; 
+}
+header nav li {
+  display: inline;
+  color: white;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a:visited {
+  color: rgb(245, 217, 236);
+}
+#intro {
+    padding-top: 5px;
+    position: relative;
+    height: 300px;
+}
+#intro img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+
+}
+#intro h2{
+  text-align: center;
+  padding-top: 50px;
+}
+#form-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+#form{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 350px;
+  margin-left:auto;
+  margin-right: auto;
+  padding-bottom: 5px;  
+}
+#form-container button {
+  display: block;
+  width: 80px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+}
+#about-section{
+  padding-top: 150px;
+  text-align: center;
+}
+#flex-container{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+.contain{
+  width: 150px;
+}
+#about-section .contain-name{
+  font-weight: bold;
+  text-align: center;
+}
+#about-section .contain-desc{
+  font-weight: normal;
+  text-align: left;
+}
+#cakes{
+  text-align: center;
+}
+#cakes ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+footer section h2{
+  text-align: center;
+}
+#footer-flex-container{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+#footer-flex-container img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer section p{
+text-align: center;
+}
+
+
+
+
+
+/*
 main {
   display: flex;
   flex-direction: column; 
@@ -25,11 +151,6 @@ main {
   top: 40px; 
   z-index: 0;
 } 
-#header-img {
-  grid-column: 1;
-  width: 100%; 
-  align-self: center;
-}
 #nav-bar { 
   grid-column: 2;
   align-self: center;
