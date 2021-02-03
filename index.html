@@ -1,113 +1,123 @@
-<html>
-<head>
-  <title>build a product Landing Page - freecodecamp</title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="level.css">
-
-<body>
-  <header id="header">
-    <img src="https://photos.app.goo.gl/NQwmErLKRRRR3zkj6.jpg" alt="Nicole's Confectioneries logo" id="header-img">
-    <nav id="nav-bar"> 
-      <a href="classes" class="nav-link">classes</a>
-      <a href="#video" class="nav-link">making  pastry</a>
-      <a href="#products" class="nav-link">pricing</a>
-     </nav>
+<!DOCTYPE html>
+  <head>
+    <title>Product Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="level.css">
+  </head>
+  <body>
+    <header>
+      <img src="https://assets.codepen.io/4402687/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1603508853&width=80" alt="Nicole's Confectioneries logo" id="header-img">
+      <nav> 
+        <ul>
+         <li><a href="#about-section">About</a></li>
+         <li><a href="#cakes">Pricing</a></li>
+         <li><a href="#footer-nav">Contact</a></li>
+        </ul>
+    </nav>
   </header>
   
   
   <main>
-    <article id="intro">
+    <section id="intro">
+      <img src="https://assets.codepen.io/4402687/internal/avatars/users/default.png?fit=crop&format=auto&height=80&version=1603508853&width=80" alt="Nicole's Portfolio">
       <h2>Nicole's Confectioneries</h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" name="email" placeholder="enter your email" id="email" required></input><br>
-      <input type="submit" id="submit" value="get started" class="btn">
+    <div id="form-container">
+      <form id="form">
+        <label for="name"> Name:</label>
+        <input id="name" type="text" placeholder="Write your name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Give the correct email" required>
       </form>
+      <button>Get started</button>
+</div>
+    </section>
+    
+    <section id="about-section">
+      <h2>ABOUT</h2>
+      <div id="flex-container">
+        <div class="contain">
+          <img src="https://www.istockphoto.com/photo/chef-assisting-cooking-class-gm1131384545-299560426" class="classes-img">
+          <p class="contain-name">CLASSES</p>
+          <p class="contain-desc"> Here in Nicole's Confectioneries, we offer Quality Classes to our students, Ranging from the local classes, International classes, cakes classes, catering services, etc</p>
+        </div>
+        <div class="contain">
+          <img src="https://photos.app.googl/vKjbb77zFembGNEj9.jpg" class="classes-img">
+          <p class="contain-name">OUR REPUTATION</p>
+          <p class="contain-desc"> Nicole's Confectioneries Proves to be amongthe best confections in Nigeria, our reputation precedes us for good quality services, fast delivery and relish dishes</p>
+        </div>
+        <div class="contain">
+          <img src="https://photos.app.goo.gl/vKjbb77zFembGNEj9.jpg" class="classes-img">
+          <p class="contain-name">CUSTOMER SERVICES</p>
+          <p class="contain-desc"> We offer only the best of the best customer service 24/7 on our hotlines</p>
+        </div>
+      </div>
+    </section>
+  
+  <!---- <iframe width="300" height="215" src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.techzone360.com%2Ftopics%2Ftechzone%2Farticles%2F2020%2F03%2F11%2F444749-how-will-technology-improve-customer-service-the-future.htm&psig=AOvVaw3KbX295T6iw_4NBMrbHIiN&ust=1612271849411000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKj-oYPjyO4CFQAAAAAdAAAAABAD" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>-->
+  
+    <article id="cakes">
+      <section class=" cake-section">
+        <div class="cake-header">
+          <h2>CAKE VARIETIES</h2>
+           <h3>Price List</h3>
+        </div>
+        <div class="product-content">
+          <p class="product-price">N3500</p>
+          <ul clas="product-desc">
+            <li>Vanilla</li>
+            <li>Strawberry</li>
+            <li>Chocolate</li>
+            <li>butterscotch</li>
+          </ul>
+        </div>
+        <button class="btn">select</button>
+      </section>
+      <section class="product-section">
+        <div class="product-header">
+          <h2>Shawarama-menu</h2>
+          <h3>starting price</h3>
+        </div>
+        <div class="product-content">
+          <p class="product-price">N1000</p>
+          <ul class="product-desc">
+            <li>Standard</li>
+            <li>Classy</li>
+            <li>Bourgie</li>
+            <li>VIP</li>
+          </ul>
+        </div>
+        <button class="btn">select</button>
+      </section>
+      <section class="product-section">
+        <div class="product-header">
+          <h2>Small-chops</h2> 
+          <h3>Starting price</h3>
+        </div>
+        <div class="product-content">
+          <p class="product-price">N500</p>
+          <ul class="product-desc">
+            <li>Standard</li>
+            <li>Classy</li>
+            <li>Bourgie</li>
+            <li>Biggie</li>
+          </ul>
+        </div>
+        <button class="btn">select</button>
+      </section>
     </article>
+  </main>  
     
-  <article id="classes">
-    <section class="classes-section">
-      <img src="https://photos.app.googl/vKjbb77zFembGNEj9.jpg" class="classes-img">
-      <div>
-        <h2>OUR CLASSES</h2>
-        <p> Here in Nicole's Confectioneries, we offer Quality Classes to our students, Ranging from the local classes, International classes, cakes classes, catering services, etc</p>
+  <footer id="footer-nav">
+    <section>
+      <h2> CONTACT</h2>
+      <div id="footer-flex-container">
+        <a href="https://t.co/Uezq3t9x64?amp=1"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="instagram-page" class= "footer-image"></a>
+        <a href="https://wa.me/&lt;08092780524&gt;"><img src="https://image.flaticon.com/icons/png/512/124/124034.png" alt="WhatsApp" class="footer-image"></a>
       </div>
-    </section>
-    <section class="classes-section">
-      <img src="https://photos.app.googl/vKjbb77zFembGNEj9.jpg" class="classes-img">
-      <div>
-        <h2>OUR REPUTATION</h2>
-        <p> Nicole's Confectioneries Proves to be amongthe best confections in Nigeria, our reputation precedes us for good quality services, fast delivery and relish dishes</p>
-      </div>
-    </section>
-    <section class="classes-section">
-      <img src="https://photos.app.goo.gl/vKjbb77zFembGNEj9.jpg" class="classes-img">
-      <div>
-        <h2>CUSTOMER SERVICES</h2>
-        <p> We offer only the best of the best customer service 24/7 on our hotlines</p>
-      </div>
-    </section>
-  </article>
-  
-  <iframe width="560" height="315" src="https://photos.app.goo.gl/3MC7wUvAAPbRRipL9.jpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
-  
-  <article id="cakes">
-    <section class=" cake-section">
-      <div class="cake-header">
-        <h2>cake varieties</h2>
-         <h3>starting price</h3>
-      </div>
-      <div class="product-content">
-        <p class="product-price">N3500</p>
-        <ol clas="product-desc">
-          <li>vanilla</li>
-          <li>strawberry</li>
-          <li>chocolate</li>
-          <li>butterscotch</li>
-        </ol>
-      </div>
-      <button class="btn">select</button>
-    </section>
-    <section class="product-section">
-      <div class="product-header">
-        <h2>Shawarama-menu</h2>
-         <h3>starting price</h3>
-      </div>
-      <div class="product-content">
-        <p class="product-price">N1000</p>
-        <ol class="product-desc">
-          <li>standard</li>
-           <li>classy</li>
-           <li>bourgie</li>
-           <li>VIP</li>
-        </ol>
-      </div>
-      <button class="btn">select</button>
-    </section>
-       <section class="product-section">
-      <div class="product-header">
-        <h2>Small-chops</h2>
-        <h3>starting price</h3>
-      </div>
-      <div class="product-content">
-        <p class="product-price">N500</p>
-        <ol class="product-desc">
-          <li>standard</li>
-           <li>classy</li>
-           <li>bourgie</li>
-           <li>biggie</li>
-        </ol>
-      </div>
-      <button class="btn">select</button>
-    </section>
-  <article>
-    
-    <footer>
-      <nav id="footer-nav">
-        <a href="" class="nav-link">privacy</a>
-        <a href="" class="nav-link">terms</a>
-        <a href="" class="nav-link">contact</a>
-      </nav>
       <p>Copyright 2020, Nicole's Confectioneries</p>
+      <section>
     </footer>
+  </body>
+</html>
